@@ -1,5 +1,7 @@
+import Vue from 'vue';
+import App from './App.vue';
+
 const vm = new Vue({
-    el: 'app',             /* 掛載點 */
-    data: { /* ... */ },   /* 初始資料 */
-    methods: { /* ... */}, /* 方法 */
+    el: '#root',
+    render: h => h(App)
 });
