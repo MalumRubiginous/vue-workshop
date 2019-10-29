@@ -1,10 +1,10 @@
 import Vue from 'vue';
-
-import store from './store/index.js';
+import store from './store';
+import router from './router';
 import App from './App';
 
 const vm = new Vue({
-    el: '#root',
+    router,
     store,
     render: (createElement) => createElement(App)
-});
+}).$mount('#root');
