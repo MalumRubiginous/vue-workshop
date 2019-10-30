@@ -1,13 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Foo from './components/Foo';
-import Bar from './components/Bar';
+import foo from './foo';
+import bar from './bar';
 
 Vue.use(VueRouter);
 const routes = [
-    { name: 'foo', path: '/foo', component: Foo },
-    { name: 'bar', path: '/bar', component: Bar }
+    foo,
+    bar,
 ];
 
 const router = new VueRouter({

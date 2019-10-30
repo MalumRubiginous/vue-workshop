@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import store from './store';
-import router from './router';
+import router from './routes';
 import App from './App';
 
 const vm = new Vue({
